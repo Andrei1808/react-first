@@ -2,7 +2,7 @@ import classes from './Navbar.module.css'
 import {NavLink} from "react-router-dom";
 
 const setActive = (navData) => navData.isActive ? classes.active : classes.item
-console.log(setActive)
+
 const Navbar = () => {
     return (
         <nav className={classes.nav}>
