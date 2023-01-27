@@ -13,3 +13,16 @@
     color: gold;
     text-decoration: none;
 }
+
+.friends{
+    display: flex;
+    margin: 10px 0;
+}
+
+.friendsBlock h3{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
