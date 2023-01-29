@@ -6,7 +6,7 @@ import {addMessageActionCreator, updateNewMessageActionCreator} from '../../redu
 
 
 const Dialogs = (props) => {
-
+debugger;
     let dialogsElements = props.state.dialogs.map(elem => {
         return <DialogItem name={elem.name} id={elem.id}/>
     })
