@@ -4,9 +4,11 @@ import React from "react";
 
 
 
+
 const MyPosts = (props) => {
     debugger
-    console.log(props.state)
+    console.log(props)
+
     let postsElements = props.posts.map(elem => {
         return <Post message={elem.message} id={elem.id} likeCounts={elem.likesCount}/>
     })

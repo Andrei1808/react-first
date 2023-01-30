@@ -6,7 +6,7 @@ const setActive = (navData) => navData.isActive ? classes.active : classes.item
 
 const Navbar = (props) => {
     let friendInfo = props.state.friends.map(el => <Friends name={el.name} img={el.img} id={el.id}/>)
-
+debugger
     return (<div className={classes.nav}>
             <nav>
                 <div className={`${classes.item}`}>
