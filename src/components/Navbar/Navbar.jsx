@@ -1,12 +1,13 @@
 import classes from './Navbar.module.css'
 import {NavLink} from "react-router-dom";
 import Friends from './../Friends/Friends'
+import React from "react";
 
 const setActive = (navData) => navData.isActive ? classes.active : classes.item
 
 const Navbar = (props) => {
-    let friendInfo = props.state.friends.map(el => <Friends name={el.name} img={el.img} id={el.id}/>)
-
+    let friendInfo = props.friends.map(el => <Friends name={el.name} img={el.img} id={el.id}/>)
+debugger
     return (<div className={classes.nav}>
             <nav>
                 <div className={`${classes.item}`}>
@@ -23,6 +24,9 @@ const Navbar = (props) => {
                 </div>
                 <div className={classes.item}>
                     <NavLink to="/settings" className={setActive}>Settings</NavLink>
+                </div>
+                <div className={classes.item}>
+                    <NavLink to="/users" className={setActive}>Users</NavLink>
                 </div>
             </nav>
             <div className={classes.friendsBlock}>
