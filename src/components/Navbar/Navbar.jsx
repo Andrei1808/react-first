@@ -25,6 +25,9 @@ debugger
                 <div className={classes.item}>
                     <NavLink to="/settings" className={setActive}>Settings</NavLink>
                 </div>
+                <div className={classes.item}>
+                    <NavLink to="/users" className={setActive}>Users</NavLink>
+                </div>
             </nav>
             <div className={classes.friendsBlock}>
                 <h3>Friends</h3>
