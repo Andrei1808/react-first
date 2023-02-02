@@ -6,13 +6,14 @@ import React from "react";
 
 
 const Dialogs = (props) => {
-debugger;
+
     let dialogsElements = props.dialogs.map(elem => {
-        return <DialogItem name={elem.name} id={elem.id}/>
+        return <DialogItem name={elem.name} id={elem.id}  key={elem.id}/>
     })
     let messagesElements = props.messages.map(elem => {
-        return <Message message={elem.message} id={elem.id}/>
+        return <Message message={elem.message} id={elem.id} key={elem.id}/>
     })
+
     let addMessage = () => {
         props.addMessage();
     }
