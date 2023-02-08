@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import {connect} from "react-redux";
 
 let mapStateToProps = (state)=>{
-    debugger
+
     return {
         friends: state.sidebar.friends
     }
