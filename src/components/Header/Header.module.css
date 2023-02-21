@@ -1,7 +1,18 @@
-.header{
+.header {
     grid-area: header;
     background-color: red;
 }
-.header img{
+
+.header img {
     width: 50px;
+}
+
+.loginBlock {
+    color: purple;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
 }
